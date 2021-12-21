@@ -74,7 +74,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center">
+            <div class="col-sm-4 hidden-xs text-center" style="margin-top:250px;position: relative;">
                 <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
@@ -210,7 +210,7 @@
             <div class="col-md-12 text-center">
                 <h3>A picture is worth a thousand words!</h3>
                 <p>Help us capture the moment, tag your photos with the hashtag
-                    <a href="https://www.instagram.com/explore/tags/azatuhialessio/" target="_blank">#AzatuhiAlessio</a>
+                    <a href="https://www.instagram.com/explore/tags/alessioazatuhi/" target="_blank">#AlessioAzatuhi</a>
                 </p>
             </div>
         </div>
@@ -380,7 +380,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
+                <h3>Ready for Rome?</h3>
                 <p>We would greatly appreciate if you could RSVP before June 30<sup>th</sup> 2022</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
@@ -412,10 +412,30 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
+                                <i class="fa fa-key"></i><input type="text" name="dietary_restriction" id="dietary_restriction"
+                                                                class=""
+                                                                placeholder="Dietary Restrictions"
                                                                 required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="date" name="planned_arrival" id="planned_arrival"
+                                                                class=""
+                                                                placeholder="Planned Arrival Date"
+                                                                required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i>
+                                <select name="accommodation" id="accommodation"
+                                                                placeholder="Preferred Accommodation"
+                                                                required>
+                                    <option value="">Hotel center of Rome</option>
+                                    <option value="">Hotel close to the location</option>
+                                    <option value="">I will find my own accommodation</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -423,8 +443,7 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                        Submit
                     </button>
                 </form>
             </div>
