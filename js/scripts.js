@@ -197,10 +197,10 @@ $(document).ready(function () {
             end: new Date('Nov 26, 2022 00:00'),
 
             // Event Address
-            address: 'Tenuta Di Ripolo',
+            address: 'Tenuta Di Ripolo - Via Settevene Palo, Km. 3,200, 01036 Nepi VT',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact TODO-name at +91 9876543210."
+            description: "We can't wait to see you on our big day!"
         }
     });
 
@@ -213,6 +213,8 @@ $(document).ready(function () {
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+
+        console.log(data);
 
         /*
         if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
