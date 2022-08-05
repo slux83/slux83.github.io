@@ -104,6 +104,9 @@ section.features,section.events,section.blog{
     padding: 0.2em;
     margin:0;
 }
+.list a {
+    text-decoration: underline
+}
 
 a{
     color:#6a1818;
