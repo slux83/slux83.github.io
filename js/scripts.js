@@ -212,7 +212,7 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Quasi fatto!</strong> I dati vengono salvati.'));
 
         console.log(data);
 
@@ -222,7 +222,8 @@ $(document).ready(function () {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
         */
-        $.post('https://script.google.com/macros/s/AKfycbzcD3Yw1DkNyc2z8fmwk7GT7OiDJvGZEZkCcof-cOV7C21qN2s3aCtpRGf4LOJoinE5/exec', data)
+
+        $.post('https://script.google.com/macros/s/AKfycbxVYZ_fR4GlJ_IfqPB7N6qkKsABYx8BgPT-_lC61Sd__cejHHL_aLgFkNK3U5K4N31_/exec', data)
             .done(function (data) {
                 console.log(data);
                 if (data.result === "error") {
@@ -234,7 +235,7 @@ $(document).ready(function () {
             })
             .fail(function (data) {
                 console.log(data);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Oops!</strong> Qualcosa e\' andato storto. '));
             });
         //}
     });
