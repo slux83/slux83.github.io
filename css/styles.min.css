@@ -53,7 +53,8 @@ h5{
     -webkit-border-radius:40px;
     border-radius:40px;
     display:inline-block;
-    border-color:#fff
+    border-color:#fff;
+    font-weight: bold;
 }
 .btn-white:hover,.btn-white:focus{
     color:#e8ca6f;
@@ -360,11 +361,19 @@ section .header{
     width:100%;
     z-index:999
 }
+.navigation a {
+    background-color: rgba(1,21,1,0.5);
+    font-weight: bold;
+
+}
 .fixed{
     position:fixed;
     background-color:rgba(55,36,40,0.88);
     z-index:999;
     width:100%
+}
+.fixed a {
+    background-color: rgba(1,21,1,0.0);
 }
 header{
     padding:50px 0;
@@ -798,7 +807,8 @@ header .member-actions{
     padding:15px 0;
     border-radius:3px;
     width:100%;
-    font-size:13px
+    font-size:13px;
+    font-weight: bold
 }
 .rsvp .rsvp-form .form-input-group{
     width:100%;
