@@ -352,8 +352,8 @@ section .header{
     padding-top:18%
 }
 .hero .hero-content img{
-    width:55%;
-    margin-bottom:12%
+    width:100%;
+    margin-top:70%
 }
 .navigation{
     transition:all 300ms ease-in-out;
