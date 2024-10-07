@@ -165,7 +165,8 @@
                     <ul>
                         <li><strong>11:00</strong> La cerimonia avr&agrave; luogo nella parrocchia di
                             <a href="https://maps.app.goo.gl/rVsgQfLdP1qA1aau6" target="_blank">San Bruno alla
-                                Pisana</a><br/>Indirizzo: Largo S. Bruno, 2, 00163 Roma</li>
+                                Pisana</a><br/>Indirizzo: Largo S. Bruno, 2, 00163 Roma
+                        </li>
                         <li><strong>13:00</strong> Ricevimento al ristorante Ristorante La Nuova Pineta - Guido Il
                             Molisano
                             (<a href="#map">vedi sotto</a>)
@@ -252,47 +253,55 @@
                 <h3>Conferma L'invito</h3>
                 <p>Saremmo molto grati se potessi rispondere a questo form per confermare l'invito e la
                     partecipazione,<br/><strong>prima del 15 Gennaio 2025</strong></p>
+                <p>Il men&ugrave; di base sar&agrave; di pesce, ma puoi specificare una preferenza per un menu di carne
+                    o vegetariano nel form qui sotto.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <input hidden="hidden" type="email" name="email" class=""
+                               placeholder="La tua Email"   />
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="La tua Email"
-                                                                     required="required"/>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Nome e Cognome"
-                                                                 required="required"/>
+                                <i class="fa fa-users"></i><input name="name" class=""
+                                                                  placeholder="Nome partecipanti"
+                                                                  required="required"/>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="text" name="plus_one" class=""
-                                                                  placeholder="+1? (Nome/Cognome)"/>
+                                <i class="fa fa-cutlery"></i>
+                                <div class="radio-group">
+                                    <label>Men&ugrave;</label>
+                                    <label><input type="radio" id="standard" name="menu" value="standard"
+                                                  class="radio"/>&nbsp;Standard</label>
+
+                                    <label><input onchange="console.log(this.checked)" type="radio" id="carne" name="menu" value="carne"
+                                                  class="radio"/>&nbsp;Carne</label>
+
+                                    <label><input type="radio" id="vegetariano" name="menu" value="vegetariano"
+                                                  class="radio"/>&nbsp;Vegetariano</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
+
                             <div class="form-input-group">
                                 <i class="fa fa-cutlery"></i><input type="text" name="dietary_restriction"
                                                                     id="dietary_restriction"
                                                                     class=""
-                                                                    placeholder="Restrizioni Dietetiche"/>
+                                                                    placeholder="Intolleranze/allergie alimentari"/>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12">
-                                <input type="text" hidden="hidden" name="accommodation" id="accommodation"
-                                       placeholder="Indirizzo di casa" required="required"
-                                       class="" value=""/>
+                            <input type="text" hidden="hidden" name="accommodation" id="accommodation"
+                                   placeholder="Indirizzo di casa"
+                                   class="" value=""/>
 
-                                <input type="text" hidden="hidden" name="planned_arrival" id="planned_arrival"
-                                       class="" value=""/>
+                            <input type="text" hidden="hidden" name="planned_arrival" id="planned_arrival"
+                                   class="" value=""/>
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
@@ -319,9 +328,11 @@
     <div class="text-center">
         <h3>Regali</h3>
 
-        <p>Vorremmo organizzare un bel viaggio per coccolarci un p&ograve;.<br/>Se desideri farci un regalo, saremmo molto
+        <p>Vorremmo organizzare un bel viaggio per coccolarci un p&ograve;.<br/>Se desideri farci un regalo, saremmo
+            molto
             grati
-            di ricevere un contributo per la nostra avventura,<br/>che speriamo consister&aacute; in un viaggio alle Maldives
+            di ricevere un contributo per la nostra avventura,<br/>che speriamo consister&aacute; in un viaggio alle
+            Maldives
         </p>
 
         <h4>Trasferimento bancario</h4>

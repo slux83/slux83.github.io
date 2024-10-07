@@ -872,6 +872,23 @@ header .member-actions{
     border-radius:6px;
     border:none
 }
+
+.radio-group {
+    position:absolute;
+    height: 100%;
+    margin-left: 70px;
+    display: flex;
+    gap: 20px;
+    color: #d4d7d9
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin: 0
+}
+
+
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{
     color:#BCC1C3
 }
