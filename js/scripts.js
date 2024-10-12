@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Alessio and Azatuhi's Wedding",
+            title: "Anniversario 50 anni Sandro e Franca",
 
             // Event start date
-            start: new Date('Nov 26, 2022 10:00'),
+            start: new Date('Feb 08, 2025 11:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 26, 2022 00:00'),
+            end: new Date('Feb 08, 2025 16:00'),
 
             // Event Address
-            address: 'Tenuta Di Ripolo - Via Settevene Palo, Km. 3,200, 01036 Nepi VT',
+            address: 'Via Tuscolana, 321, 00046 Grottaferrata RM, Italia',
 
             // Event Description
-            description: "We can't wait to see you on our big day!"
+            description: ""
         }
     });
 
